@@ -8,9 +8,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var twoSum = new AddTwoNumbersReverseOrderSolution();
+            var app = new LengthOfLongestSubstringSolution();
 
-            twoSum.execute();
+            app.execute();
         }
     }
 }
