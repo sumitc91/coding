@@ -1,4 +1,5 @@
 ﻿using LeetCode.Easy;
+using LeetCode.Medium;
 using System;
 
 namespace LeetCode
@@ -7,10 +8,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var twoSum = new TwoSumSolutionDuplicateAllowed();
-            int[] nums = { 2, 7, 11, 15 };
-            int target = 9;
-            var res = twoSum.TwoSum(nums, target);
+            var twoSum = new AddTwoNumbersSolution();
+
+            twoSum.execute();
         }
     }
 }
