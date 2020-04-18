@@ -8,7 +8,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var twoSum = new AddTwoNumbersSolution();
+            var twoSum = new AddTwoNumbersReverseOrderSolution();
 
             twoSum.execute();
         }
