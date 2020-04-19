@@ -8,7 +8,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new LengthOfLongestSubstringSolution();
+            var app = new SingleNumberSolution();
 
             app.execute();
         }
