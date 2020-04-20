@@ -1,4 +1,5 @@
 ﻿using LeetCode.Easy;
+using LeetCode.Hard;
 using LeetCode.Medium;
 using System;
 
@@ -8,7 +9,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new SingleNumberSolution();
+            var app = new MedianTwoSortedArraySolution();
 
             app.execute();
         }
