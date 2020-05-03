@@ -70,7 +70,7 @@ namespace LeetCode.AskGif.Easy.String
 
         private bool isNumber(char v)
         {
-            return v >= 48 && v <= 56;
+            return v >= 48 && v <= 57;
         }
     }
 }

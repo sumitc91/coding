@@ -1,4 +1,5 @@
 
+using LeetCode.AskGif.Easy.String;
 using LeetCode.Easy;
 using LeetCode.Hard;
 using LeetCode.Medium;
@@ -10,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new MedianTwoSortedArraySolution();
+            var app = new DestCitySoln();
             app.execute();
         }
     }
