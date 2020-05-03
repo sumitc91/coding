@@ -8,7 +8,7 @@ namespace LeetCode.Medium
     {
         public void execute()
         {
-            int res = LengthOfLongestSubstring("abcabcbb");
+            int res = LengthOfLongestSubstringBySlidingWindow("aabaab!bb");
         }
         public int LengthOfLongestSubstring(string s)
         {
@@ -41,6 +41,35 @@ namespace LeetCode.Medium
                 }
             }
             
+            return max;
+        }
+
+        public int LengthOfLongestSubstringBySlidingWindow(string s)
+        {
+            int max = 0;            
+            int start = 0;
+            int end;
+            var hashSet = new HashSet<char>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (hashSet.Contains(s[i]))
+                {                    
+                    while (s[start] != s[i])
+                    {
+                        hashSet.Remove(s[start]);
+                        start++;
+                    }
+                    start++;
+                }
+                else
+                {                    
+                    hashSet.Add(s[i]);
+                    if (max < hashSet.Count)
+                    {
+                        max = hashSet.Count;
+                    }
+                }
+            }
             return max;
         }
     }
