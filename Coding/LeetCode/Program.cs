@@ -1,5 +1,6 @@
-﻿using LeetCode.AskGif.Easy.String;
+
 using LeetCode.Easy;
+using LeetCode.Hard;
 using LeetCode.Medium;
 using System;
 
@@ -9,8 +10,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new ReformatString();
-
+            var app = new MedianTwoSortedArraySolution();
             app.execute();
         }
     }
