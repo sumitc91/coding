@@ -11,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new MaxNumberOfBalloonsSln();
+            var app = new NumSmallerByFrequencySol();
             app.execute();
         }
     }
