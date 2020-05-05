@@ -11,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new NumSmallerByFrequencySol();
+            var app = new DefangIPaddrSln();
             app.execute();
         }
     }
