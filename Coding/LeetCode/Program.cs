@@ -11,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var app = new DefangIPaddrSln();
+            var app = new IsLongPressedNameSoln();
             app.execute();
         }
     }
