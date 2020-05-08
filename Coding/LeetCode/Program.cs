@@ -9,9 +9,9 @@ namespace LeetCode
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var app = new IsLongPressedNameSoln();
+            var app = new RotatedDigitsSoln();
             app.execute();
         }
     }
