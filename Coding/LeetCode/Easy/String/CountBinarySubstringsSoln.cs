@@ -8,44 +8,31 @@ namespace LeetCode.AskGif.Easy.String
     {
         public int CountBinarySubstrings(string s)
         {
-            int ans = 0;                        
-            for (int i = 2; i <= s.Length; i += 2)
+            var groups = new int[s.Length];
+            groups[0] = 1;
+            int j = 0;
+            for (int i = 1; i < s.Length; i++)
             {
-                for (int j = 0; j < s.Length-(i-1); j++)
+                if(s[i-1] != s[i])
                 {
-                    if (IsEqualCount(s.Substring(j, i)))
-                    {                       
-                        ans++;
-                    }
-                }
-            }
-
-            return ans;
-        }
-
-        private bool IsEqualCount(string substring)
-        {
-            int i = 0;
-            int toggle = 0;
-            for (int j = 0; j < substring.Length; j++)
-            {
-                if (substring[j] == '0')
-                {
-                    i--;
+                    j++;
+                    groups[j] = 1;
                 }
                 else
                 {
-                    i++;
-                }
-
-                if (j != 0)
-                {
-                    if (substring[j - 1] != substring[j])
-                        toggle++;
+                    groups[j]++;
                 }
             }
 
-            return i == 0 && toggle == 1;
+            int sum = 0;
+            for (int i = 1; i < s.Length; i++)
+            {
+                sum += Math.Min(groups[i - 1], groups[i]);
+            }
+
+            return sum;
         }
+
+        
     }
 }
