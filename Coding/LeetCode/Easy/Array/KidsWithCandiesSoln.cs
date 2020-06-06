@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CodingUnitTest.Easy.Array
 {
@@ -8,7 +6,22 @@ namespace CodingUnitTest.Easy.Array
     {
         public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
         {
-            return null;
+            var res = new List<bool>();
+            int max = int.MinValue;
+            for (int i = 0; i < candies.Length; i++)
+            {
+                if (max < candies[i])
+                {
+                    max = candies[i];
+                }
+            }
+
+            for (int i = 0; i < candies.Length; i++)
+            {
+                res.Add((candies[i] + extraCandies) >= max);                
+            }
+
+            return res;
         }
     }
 }

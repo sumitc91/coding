@@ -13,6 +13,6 @@ namespace CodingUnitTest.Util
             {
                 Assert.AreEqual(expected[i], actual[i]);
             }            
-        }
+        }        
     }
 }
