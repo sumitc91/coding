@@ -71,7 +71,7 @@ namespace CodingUnitTest.Easy.Array
             Assert.AreEqual(res.Count, output.Count);
             for (int i = 0; i < res.Count; i++)
             {
-                Assert.AreEqual(res[0], output[0]);
+                Assert.AreEqual(res[i], output[i]);
             }
         }
 

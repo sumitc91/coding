@@ -43,7 +43,7 @@ namespace CodingUnitTest.Easy.Array
             Assert.AreEqual(res.Length, output.Length);
             for (int i = 0; i < res.Length; i++)
             {
-                Assert.AreEqual(res[0], output[0]);
+                Assert.AreEqual(res[i], output[i]);
             }
         }
     }
